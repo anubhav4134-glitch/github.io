@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anubhav | Student Portfolio</title>
+<style>
+  :root {
+    --bg: #f5f7fa;
+    --surface: #ffffff;
+    --text: #1f2933;
+    --muted: #52606d;
+    --accent: #1d4e89;
+    --accent-dark: #153a67;
+    --line: #d9e2ec;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: auto; }
+  body {
+    margin: 0;
+    font-family: "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.65;
+  }
+  a { color: var(--accent); }
+  a:hover { color: var(--accent-dark); }
+  a:focus-visible { outline: 3px solid #f0b429; outline-offset: 2px; }
+
+  header { background: var(--accent); color: #fff; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+  .hero { padding: 48px 20px 36px; }
+  .hero h1 { margin: 0 0 6px; font-size: 2.2rem; line-height: 1.2; }
+  .hero p { margin: 0; font-size: 1.1rem; color: #dbe7f5; }
+  nav { border-top: 1px solid rgba(255,255,255,.25); }
+  nav ul { list-style: none; margin: 0 auto; padding: 0 20px; max-width: 860px; display: flex; flex-wrap: wrap; gap: 4px 22px; }
+  nav a { display: inline-block; padding: 12px 0; color: #fff; text-decoration: none; font-weight: 600; }
+  nav a:hover { text-decoration: underline; color: #fff; }
+  nav a:focus-visible { outline-color: #fff; }
+
+  main { padding: 12px 0 40px; }
+  section { padding: 28px 0 8px; }
+  h2 { font-size: 1.5rem; margin: 0 0 14px; color: var(--accent); padding-bottom: 8px; border-bottom: 2px solid var(--line); }
+  h3 { font-size: 1.1rem; margin: 0 0 6px; }
+  p { margin: 0 0 12px; max-width: 70ch; }
+
+  .item { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 18px 20px; margin-bottom: 14px; }
+  .item p:last-child { margin-bottom: 0; }
+  .repo { font-weight: 600; }
+
+  .skills { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+  .skills li { background: var(--surface); border: 1px solid var(--line); border-radius: 4px; padding: 6px 12px; font-size: .95rem; }
+
+  .links { list-style: none; padding: 0; margin: 0; }
+  .links li { margin-bottom: 8px; }
+
+  footer { border-top: 1px solid var(--line); padding: 20px 0; color: var(--muted); font-size: .9rem; }
+
+  @media (max-width: 520px) {
+    .hero { padding-top: 36px; }
+    .hero h1 { font-size: 1.8rem; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap hero">
+    <h1>Anubhav</h1>
+    <p>Third-semester engineering student</p>
+  </div>
+  <nav aria-label="Sections">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects / Activities</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <section id="about">
+    <h2>About</h2>
+    <p>I am an engineering student building my foundation in programming, problem-solving and software development. Through my academic activities, I have gained practical experience with C programming, Python, C++, SQL, Git, GitHub and collaborative development tools.</p>
+    <p>I am interested in improving my technical skills through coding practice, practical projects and continuous learning.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects / Activities</h2>
+
+    <article class="item">
+      <h3>Activity 1: VS Code Setup</h3>
+      <p>I set up Visual Studio Code as my programming environment and became familiar with its basic features. I created and executed a simple Hello World program and learned how to work with source-code files.</p>
+    </article>
+
+    <article class="item">
+      <h3>Activity 2: Git &amp; GitHub Setup</h3>
+      <p>I learned the fundamentals of Git and GitHub. I created a GitHub repository for my programming work and practiced adding files, committing changes and pushing them to GitHub.</p>
+      <p class="repo">Hello World repository: <a href="https://github.com/anubhav4134-glitch/hello-world-c" target="_blank" rel="noopener">github.com/anubhav4134-glitch/hello-world-c</a></p>
+    </article>
+
+    <article class="item">
+      <h3>Activity 3: GitLens &amp; Live Share</h3>
+      <p>I explored GitLens and Live Share to understand version history and collaborative programming. I used GitLens to view changes and Git history and used Live Share to work collaboratively.</p>
+    </article>
+
+    <article class="item">
+      <h3>Activity 4: LeetCode Practice Repository</h3>
+      <p>I created a GitHub repository for practicing LeetCode problems. I solved coding problems using C and organized my solutions according to different problem topics. I also documented test cases, problem-solving approaches, complexity and my progress.</p>
+      <p class="repo">LeetCode repository: <a href="https://github.com/anubhav4134-glitch/LeetCode" target="_blank" rel="noopener">github.com/anubhav4134-glitch/LeetCode</a></p>
+    </article>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills">
+      <li>C Programming</li>
+      <li>Java</li>
+      <li>SQL</li>
+      <li>DBMS Fundamentals</li>
+      <li>Arrays</li>
+      <li>Pointers</li>
+      <li>Basic Data Structures</li>
+      <li>Git</li>
+      <li>GitHub</li>
+      <li>Visual Studio Code</li>
+      <li>Basic Algorithmic Problem-Solving</li>
+    </ul>
+  </section>
+
+  <section id="goal">
+    <h2>Learning Goal</h2>
+    <p>My current goal is to strengthen my programming fundamentals and improve my problem-solving abilities. I want to gain more practical experience through projects and coding problems and continue learning data structures, algorithms, databases and software development tools.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>You can find my work on GitHub:</p>
+    <ul class="links">
+      <li><a href="https://github.com/anubhav4134-glitch" target="_blank" rel="noopener">GitHub profile</a></li>
+      <li><a href="https://github.com/anubhav4134-glitch/hello-world-c" target="_blank" rel="noopener">Hello World repository (hello-world-c)</a></li>
+      <li><a href="https://github.com/anubhav4134-glitch/LeetCode" target="_blank" rel="noopener">LeetCode practice repository</a></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">Anubhav &middot; Student portfolio</div>
+</footer>
+
+</body>
+</html>
